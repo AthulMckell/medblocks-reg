@@ -1,4 +1,4 @@
-Patient Registration App
+**Patient Registration App**
 A frontend-only patient registration system built using:
 
 ⚡️ Vite + React
@@ -24,7 +24,7 @@ Fully frontend — no backend required
 
 Responsive, colorful UI with Tailwind
 
-🛠️ Technologies
+**🛠️ Technologies**
 React
 
 Vite
@@ -35,29 +35,16 @@ Tailwind CSS
 
 BroadcastChannel
 
-🚀 Getting Started
+**🚀 Getting Started**
 1. Clone the Repo
-bash
-Copy
-Edit
-git clone https://github.com/AthulMckell/medblocks-reg0.git
-cd medblocks-reg0
+git clone https://github.com/AthulMckell/medblocks-reg.git
+cd medblocks-reg
 2. Install Dependencies
-bash
-Copy
-Edit
 npm install
 3. Run the Dev Server
-bash
-Copy
-Edit
 npm run dev
-Visit http://localhost:5173
 
-🔧 Project Structure
-bash
-Copy
-Edit
+**🔧 Project Structure**
 src/
 │
 ├── components/
@@ -70,35 +57,7 @@ src/
 ├── App.jsx                   # Main layout
 ├── main.jsx                  # Entry point
 └── index.css                 # Tailwind base styles
-📦 Production Build
-To deploy (e.g., on Vercel):
 
-Fix for Vercel: No top-level await
-Make sure your main.jsx initializes the DB using:
 
-js
-Copy
-Edit
-import { initDb } from './db/pglite';
-
-async function startApp() {
-  await initDb();
-  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-}
-
-startApp();
-Then build:
-
-bash
-Copy
-Edit
-npm run build
-📝 Notes
-All patient data is stored in the browser using IndexedDB, via PGlite.
-
-This app does not use a server — all logic is on the frontend.
-
-You can deploy it on Vercel, Netlify, or any static hosting service.
-
-👨‍⚕️ Author
-Athul Mckell – @AthulMckell
+**👨‍⚕️ Author
+Athul Raj M – @AthulMckell**
