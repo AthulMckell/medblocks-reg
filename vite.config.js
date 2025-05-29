@@ -10,10 +10,13 @@ export default defineConfig({
     exclude: ['@electric-sql/pglite'],
   },
   build: {
+    target: ['es2022', 'chrome89', 'firefox89', 'safari15'],
     rollupOptions: {
       output: {
         manualChunks: undefined,  
       },
+    
+
     },
   },
 })

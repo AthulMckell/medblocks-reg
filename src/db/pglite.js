@@ -14,3 +14,4 @@ await db.exec(`
   )
 `);
 
+export default db;
